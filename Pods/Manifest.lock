@@ -1,16 +1,22 @@
 PODS:
-  - ZLSwipeableViewSwift (0.0.7)
+  - ZLSwipeableViewSwift (0.0.8)
 
 DEPENDENCIES:
-  - ZLSwipeableViewSwift
+  - ZLSwipeableViewSwift (from `https://github.com/zhxnlai/ZLSwipeableViewSwift.git`, commit `18d6109`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - ZLSwipeableViewSwift
+EXTERNAL SOURCES:
+  ZLSwipeableViewSwift:
+    :commit: 18d6109
+    :git: https://github.com/zhxnlai/ZLSwipeableViewSwift.git
+
+CHECKOUT OPTIONS:
+  ZLSwipeableViewSwift:
+    :commit: 18d6109
+    :git: https://github.com/zhxnlai/ZLSwipeableViewSwift.git
 
 SPEC CHECKSUMS:
-  ZLSwipeableViewSwift: f5ee94c2e4220f900f5a129118af2aef23062900
+  ZLSwipeableViewSwift: 488041f77089bfc03fe1419579ef32e976709f5d
 
-PODFILE CHECKSUM: a5efa72178fd211f07b3f7111f7e04a7471fe6fe
+PODFILE CHECKSUM: 28e81decb6fe7a6eadadd724e338e9ccb077fd66
 
 COCOAPODS: 1.5.3
