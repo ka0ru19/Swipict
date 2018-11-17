@@ -313,7 +313,43 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		216D2E23ECE513075A1599BFA7497A09 /* Debug */ = {
+		3313A77577121474D1DBDF8467CB5A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF1A0F329E6A8D61A63E8ABF308A7E7 /* ZLSwipeableViewSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZLSwipeableViewSwift/ZLSwipeableViewSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZLSwipeableViewSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZLSwipeableViewSwift/ZLSwipeableViewSwift.modulemap";
+				PRODUCT_MODULE_NAME = ZLSwipeableViewSwift;
+				PRODUCT_NAME = ZLSwipeableViewSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		417B598207F1CC3D3EBB3B009F7BD2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8260D1C9A16CE6C28AB3F83DA91F823D /* Pods-Swipict.debug.xcconfig */;
 			buildSettings = {
@@ -344,84 +380,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		477DA37C2C055308D52FE289410F2CA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBF1A0F329E6A8D61A63E8ABF308A7E7 /* ZLSwipeableViewSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZLSwipeableViewSwift/ZLSwipeableViewSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZLSwipeableViewSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ZLSwipeableViewSwift/ZLSwipeableViewSwift.modulemap";
-				PRODUCT_MODULE_NAME = ZLSwipeableViewSwift;
-				PRODUCT_NAME = ZLSwipeableViewSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		51530E2A129947F60DBCEEAC6AC713BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE20386883AEA05E5B1632403EBDF923 /* Pods-Swipict.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Swipict/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Swipict/Pods-Swipict.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -551,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		8A205F0692FC4D70C437CE40A8114458 /* Release */ = {
+		DA3C944D1D9067D0B6392C6E587D16EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBF1A0F329E6A8D61A63E8ABF308A7E7 /* ZLSwipeableViewSwift.xcconfig */;
 			buildSettings = {
@@ -579,6 +543,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E303C89B312F68AE0B4E3CDC7BD3D5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE20386883AEA05E5B1632403EBDF923 /* Pods-Swipict.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Swipict/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Swipict/Pods-Swipict.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -593,8 +595,8 @@
 		28B64E4AC99034161E9632ACBE07ED38 /* Build configuration list for PBXNativeTarget "ZLSwipeableViewSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				477DA37C2C055308D52FE289410F2CA5 /* Debug */,
-				8A205F0692FC4D70C437CE40A8114458 /* Release */,
+				DA3C944D1D9067D0B6392C6E587D16EA /* Debug */,
+				3313A77577121474D1DBDF8467CB5A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -611,8 +613,8 @@
 		DF16FD8B3B3AB1293CBD1F5421B29FA0 /* Build configuration list for PBXNativeTarget "Pods-Swipict" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				216D2E23ECE513075A1599BFA7497A09 /* Debug */,
-				51530E2A129947F60DBCEEAC6AC713BF /* Release */,
+				417B598207F1CC3D3EBB3B009F7BD2BF /* Debug */,
+				E303C89B312F68AE0B4E3CDC7BD3D5E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
