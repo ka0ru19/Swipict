@@ -6,6 +6,6 @@ target 'Swipict' do
   use_frameworks!
 
   # Pods for Swipict
-  pod 'ZLSwipeableViewSwift'
+  pod 'ZLSwipeableViewSwift', :git => 'https://github.com/zhxnlai/ZLSwipeableViewSwift.git', :commit => '18d6109'
 
 end
