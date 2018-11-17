@@ -12,9 +12,12 @@
 		633682B9219FE95600D73639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633682B7219FE95600D73639 /* Main.storyboard */; };
 		633682BB219FE95800D73639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633682BA219FE95800D73639 /* Assets.xcassets */; };
 		633682BE219FE95800D73639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633682BC219FE95800D73639 /* LaunchScreen.storyboard */; };
+		FD6A5F2547C87BD2A759582F /* Pods_Swipict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E781404B68D45808DABE7B2 /* Pods_Swipict.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2654C46A6747754B2258BC4E /* Pods-Swipict.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipict.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swipict/Pods-Swipict.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6D95FF8FCAA06068F931EB /* Pods-Swipict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipict.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swipict/Pods-Swipict.release.xcconfig"; sourceTree = "<group>"; };
 		633682B0219FE95600D73639 /* Swipict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swipict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633682B3219FE95600D73639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		633682B5219FE95600D73639 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		633682BA219FE95800D73639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633682BD219FE95800D73639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		633682BF219FE95800D73639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E781404B68D45808DABE7B2 /* Pods_Swipict.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swipict.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6A5F2547C87BD2A759582F /* Pods_Swipict.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54128F5961D0065261D4C91D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2654C46A6747754B2258BC4E /* Pods-Swipict.debug.xcconfig */,
+				4D6D95FF8FCAA06068F931EB /* Pods-Swipict.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		633682A7219FE95600D73639 = {
 			isa = PBXGroup;
 			children = (
 				633682B2219FE95600D73639 /* Swipict */,
 				633682B1219FE95600D73639 /* Products */,
+				54128F5961D0065261D4C91D /* Pods */,
+				A0AC857515E6067FEF1D8BFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Swipict;
 			sourceTree = "<group>";
 		};
+		A0AC857515E6067FEF1D8BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E781404B68D45808DABE7B2 /* Pods_Swipict.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633682C2219FE95800D73639 /* Build configuration list for PBXNativeTarget "Swipict" */;
 			buildPhases = (
+				F33187587F05DC405B656F74 /* [CP] Check Pods Manifest.lock */,
 				633682AC219FE95600D73639 /* Sources */,
 				633682AD219FE95600D73639 /* Frameworks */,
 				633682AE219FE95600D73639 /* Resources */,
+				3E9D95B3D57333A736739EAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E9D95B3D57333A736739EAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swipict/Pods-Swipict-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZLSwipeableViewSwift/ZLSwipeableViewSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLSwipeableViewSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swipict/Pods-Swipict-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33187587F05DC405B656F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swipict-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		633682AC219FE95600D73639 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		633682C3219FE95800D73639 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2654C46A6747754B2258BC4E /* Pods-Swipict.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		633682C4219FE95800D73639 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6D95FF8FCAA06068F931EB /* Pods-Swipict.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
